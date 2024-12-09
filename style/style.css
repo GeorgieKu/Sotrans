@@ -757,8 +757,7 @@ h2 {
 .contacts__textarea {
   border: 1px solid var(--input-border);
   border-radius: var(--inputmborder-radius);
-  padding-left: 12px;
-  padding-right: 20px;
+  width: 100%;
   background: var(--input-bg);
   font-weight: 400;
   font-family: var(--primary-font);
@@ -767,47 +766,18 @@ h2 {
   resize: none;
   color: var(--input-inputvalue);
   min-height: 144px;
-  padding-top: 8px;
 }
 .contacts__textarea::-webkit-scrollbar {
   display: none;
 }
-.contacts .simplebar {
-  overflow: visible !important;
-  cursor: pointer;
-  z-index: 10;
-}
-.contacts .simplebar-track {
-  opacity: 1 !important;
-  visibility: visible !important;
-  background-color: transparent;
-  border: 1px solid rgb(204, 204, 204);
-}
-.contacts .simplebar-track.simplebar-vertical {
-  width: 4px;
-  right: 8px;
-  top: 8px;
-  max-height: 128px;
-  border-radius: 8px;
-}
-.contacts .simplebar-scrollbar {
-  opacity: 1 !important;
-  visibility: visible !important;
-  display: block !important;
-  background-color: rgb(204, 204, 204);
-  min-height: 40px;
-}
-.contacts .simplebar-track.simplebar-horizontal {
-  display: none;
-}
-.contacts__textarea::-moz-placeholder {
+.contacts .ss-content::-moz-placeholder {
   color: var(--placeholder-color);
   font-weight: 400;
   font-family: var(--primary-font);
   font-size: var(--font-size-sm);
   line-height: var(--line-height-s);
 }
-.contacts__textarea::placeholder {
+.contacts .ss-content::placeholder {
   color: var(--placeholder-color);
   font-weight: 400;
   font-family: var(--primary-font);
@@ -1237,13 +1207,17 @@ h2 {
   .contacts__textarea {
     font-size: var(--font-size-xs);
     line-height: var(--line-height-xs);
-    min-height: 124px;
+    height: 124px;
+    min-height: unset;
   }
-  .contacts__textarea::-moz-placeholder {
+  .contacts .simple-scrollbar textarea {
+    min-height: 127px;
+  }
+  .contacts .ss-content::-moz-placeholder {
     font-size: var(--font-size-xs);
     line-height: var(--line-height-xs);
   }
-  .contacts__textarea::placeholder {
+  .contacts .ss-content::placeholder {
     font-size: var(--font-size-xs);
     line-height: var(--line-height-xs);
   }
@@ -1347,6 +1321,9 @@ h2 {
   }
   .contacts .primary-btn.m {
     max-width: unset;
+  }
+  .contacts .simple-scrollbar textarea {
+    min-height: 112px;
   }
   .footer__flex {
     flex-direction: column;
