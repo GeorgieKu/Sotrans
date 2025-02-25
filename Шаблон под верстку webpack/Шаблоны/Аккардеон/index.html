@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="start__acc acc">
+        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 7.70711C7.31658 8.09763 6.68342 8.09763 6.29289 7.70711L0.292894 1.70711C-0.0976309 1.31658 -0.0976308 0.683417 0.292894 0.292893C0.683418 -0.0976317 1.31658 -0.0976316 1.70711 0.292893L7 5.58579L12.2929 0.292894C12.6834 -0.0976306 13.3166 -0.0976306 13.7071 0.292894C14.0976 0.683418 14.0976 1.31658 13.7071 1.70711L7.70711 7.70711Z" fill="black"/>
+            </svg>
+            
+        подробнее
+    </div>
+    <div class="content">
+         <div class="text-wrapper">
+            <p class="start__text-5">Нижний Новгород — один из самых популярных туристических городов России. Здесь вы сможете посетить:</p>
+             <ul class="start__list ">
+                <li class="start__item">памятники архитектуры разных эпох за 800 лет истории города</li>
+                <li class="start__item">музеи старины и современные галереи искусства</li>
+                <li class="start__item">неприступный Кремль и монументальную Чкаловскую лестницу</li>
+                <li class="start__item">набережные Волги и Оки с панорамными видами и живописными закатами</li>
+                <li class="start__item"> самую протяженную в Европе канатную дорогу над водой</li> 
+             </ul>
+        </div>
+    </div>
+</body>
+<style>
+      .content {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows 0.3s ease;
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+  
+  .content.open {
+    grid-template-rows: 1fr;
+  }
+
+  .acc img {
+    transition: transform .3s ease;
+  }
+  
+  .text-wrapper {
+    min-height: 0;
+  }
+</style>
+<script>
+    function openAcc(toggleButton, content, toggleArrow) {
+    toggleButton.addEventListener('click', function() {
+        content.classList.toggle('open');
+        toggleArrow.classList.toggle('rotate');
+        
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    let toggleButtons = document.querySelectorAll('.acc');
+    let contents = document.querySelectorAll('.content');
+    
+    toggleButtons.forEach((toggleButton, index) => {
+        let toggleArrow = toggleButton.querySelector('svg');
+        openAcc(toggleButton, contents[index], toggleArrow);
+    });
+});
+
+</script>
+</html>
