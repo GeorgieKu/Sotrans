@@ -1,0 +1,241 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--font-family), 'Arial', 'Helvetica', sans-serif;
+    background-color: #FFFFFF;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 375px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+:focus-visible {
+    outline: none;
+    text-decoration: underline;
+}
+
+p {
+    margin: 0;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    clip: rect(0, 0, 0, 0) !important;
+    overflow: hidden !important;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.container {
+    max-width: 1698px;
+    padding: 0 var(--container-padding-xl);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.around-container {
+    padding: var(--container-padding-xl) var(--container-padding-xl) 0;
+}
+
+main {
+    min-height: 100vh;
+}
+
+.section-margin {
+    margin-bottom: 120px;
+}
+
+.red-btn {
+    background: var(--btn-bg);
+    color: var(--btn-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 21px 0;
+    font-family: var(--font-family);
+    font-size: 15.92px;
+    font-weight: 500;
+    line-height: 19.11px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+    transform: skewX(-15deg);
+    transition: background .25s ease;
+    svg {
+        width: 8px;
+        height: 12px;
+        transform: skewX(15deg);
+        position: relative;
+        top: -1px;
+    }
+    span {
+        transform: skewX(15deg);
+    }
+}
+
+.red-btn:hover {
+    background: var(--btn-bg-hover);
+}
+
+.red-btn:disabled {
+    background: var(--btn-bg-disabled);
+    color: var(--btn-color-disabled);
+}
+
+.btn-block {
+    position: absolute;
+    background-color: #fff;
+    bottom: 0;
+    right: -20px;
+    height: 145px;
+    max-width: 307px;
+    width: 100%;
+    transform: skewX(-15deg);
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: var(--btn-bg);
+    width: 100%;
+    padding: 18px 0 60px;
+    font-family: var(--font-family);
+    font-size: 15.92px;
+    font-weight: 500;
+    line-height: 19.11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--btn-color);
+    transition: background .25s ease;
+
+    span {
+        transform: skewX(15deg);
+    }
+
+    svg {
+        width: 8px;
+        height: 12px;
+        transform: skewX(15deg);
+        position: relative;
+        top: -1px;
+        
+    }
+}
+.btn:hover {
+    background: var(--btn-bg-hover);
+}
+
+@media(max-width: 1280px) {
+    .btn-block {
+        height: 81px;
+        max-width: 204px;
+    }
+    .btn {
+        padding: 22px 0;
+        font-size: 12px;
+        line-height: 14.4px;
+        gap: 12px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .container {
+        padding: 0 var(--container-padding-l);
+    }
+    .around-container {
+        padding: var(--container-padding-l) var(--container-padding-l) 0px var(--container-padding-l);
+    }
+    .section-margin {
+        margin-bottom: 100px;
+    }
+    .red-btn {
+        padding: 15px 0;
+        font-size: 12px;
+        line-height: 14px;
+        svg {
+            width: 7px;
+            height: 10px;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .section-margin {
+        margin-bottom: 80px;
+    }
+}
+
+@media(max-width: 576px) {
+
+    .container {
+        padding: 0 var(--container-padding-s);
+    }
+    .around-container {
+        padding: 0;
+    }
+    .btn-block {
+        height: 44px;
+        max-width: 170px;
+        
+    }
+    .btn {
+        padding: 16px 0 14px;
+        svg {
+            top: 0;
+        }
+    }
+    .red-btn {
+        font-size: 12px;
+        line-height: 14px;
+        svg {
+            top: 0;
+        }
+    }
+}
