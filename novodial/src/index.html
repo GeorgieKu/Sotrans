@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Новадиал">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="preload" href="./fonts/Onest-Regular.woff2" as="font" type="font/woff2"crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Onest-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <title>Новадиал</title>
+</head>
+
+<body>
+   <div class="wrapper">
+        @@include('blocks/header/header.html')
+        <section class="hero">
+            <div class="container">
+                <div class="hero__flex">
+                    <h1>Сила,
+                        защищающая
+                        жизнь</h1>
+                    <p>ООО «Новадиал» — специализированный поставщик лекарственных препаратов, расходных материалов и медицинской техники для гемодиализа, перитонеального диализа и острого диализа.</p>
+                    <button class="hero__btn btn trans-btn" aria-label="">О компании</button>
+                </div>
+                <div class="hero__block">
+                    <img src="./img/main/hero-2.webp" alt="">
+                    <p>Российские производители рассказали о своих достижениях и планах по выпуску медицинской и фармацевтической продукции на сессии «Диализ и экстракорпоральная гемокоррекция в
+                        России: текущий статус и перспективы импортозамещения»</p>
+                    <button class="hero__btn-2 small-btn">Узнать больше</button>
+                </div>
+            </div>
+        </section>
+      
+        @@include('blocks/cookie/cookie.html')
+   </div>
+    <main>
+        <section class="media section-padding">
+            <div class="container">
+                <div class="media__flexbox descr">
+                    <h2>Медиацентр</h2>
+                    <div class="media__flex">
+                        <p>Надежный  специализированный поставщик продукции
+                            для диализа, обладает широким ассортиментов продукции, включая уникальные позиции. </p>
+                        <button class="media__btn btn light-blue-btn">Подробнее</button>
+                    </div>
+                </div>
+                <div class="media__grid">
+                    <div class="media__block">
+                        <div class="media__flex-3">
+                            <!-- Новый шрифт? -->
+                            <span>Мероприятие</span>
+                            <span class="media__date-2">26.10.2023</span>
+                        </div>
+
+                        <div class="media__img-box">
+                  
+                                <img class="media__img" src="./img/main/media.webp" alt="">
+                            
+                            
+                        </div>
+                        <p>Российский
+                            диагностический саммит
+                            4 - 6 октября 2023 года
+                            в Москве</p>
+                        <div class="media__gradient"></div>
+                    </div>
+                   <div class="media__banners">
+                    <div class="media__banner text-14-18">
+                        <div class="media__flex-2 badge light-blue">
+                            <h3>Конференция "Гемостазилогические нарушения у беременных и новорожденных.</h3>
+                            <span>Статья</span>
+                        </div>
+                        <p>Описание – основной смысл. Используйте 1-2 предложения в 1-3 строчки, если выравнивание по центру. При большем количестве текста используйте другой тип выравнивания контента</p>
+                        <span class="media__date">26.10.2023</span>
+                        <a href="#" class="media__link" aria-label="Перейти на страницу статьи"></a>
+                    </div>
+                    <div class="media__banner text-14-18">
+                        <div class="media__flex-2 badge light-blue">
+                            <h3>Два основных типа диализа</h3>
+                            <span>Статья</span>
+                        </div>
+                        <p>Описание – основной смысл. Используйте 1-2 предложения в 1-3 строчки, если выравнивание по центру. При большем количестве текста используйте другой тип выравнивания контента</p>
+                        <span class="media__date">26.10.2023</span>
+                        <a href="#" class="media__link" aria-label="Перейти на страницу статьи"></a>
+                    </div>
+                    <div class="media__banner text-14-18">
+                        <div class="media__flex-2 badge gray">
+                            <h3>Гемофильтрация аналогична гемодиализу</h3>
+                            <span>Мероприятие</span>
+                        </div>
+                        <p>Описание – основной смысл. Используйте 1-2 предложения в 1-3 строчки, если выравнивание по центру. При большем количестве текста используйте другой тип выравнивания контента</p>
+                        <span class="media__date">26.10.2023</span>
+                        <a href="#" class="media__link" aria-label="Перейти на страницу статьи"></a>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <section class="product section-padding">
+            <div class="container">
+                <div class="product__flexbox descr">
+                    <h2>Продукция</h2>
+                    <div class="product__flex">
+                        <p>Надежный  специализированный поставщик продукции
+                            для диализа, обладает широким ассортиментов продукции, включая уникальные позиции. </p>
+                            <button class="product__btn btn light-blue-btn">Подробнее</button>
+                    </div>
+                </div>
+                <ul class="product__list">
+                    <li>
+                       <a aria-label="Перейти на страницу продукта Гемодиализ" href="#">
+                            <span>01</span>
+                            <h3>Гемодиализ</h3>
+                            <div class="prodcut__img-block">
+                                
+                            </div>
+                            <img src="./img/main/product-1.webp" alt="">
+
+                       </a>
+                    </li>
+                    <li>
+                        <a aria-label="Перейти на страницу продукта Перитонеальный диализ" href="#">
+                            <span>02</span>
+                            <h3>Перитонеальный диализ</h3>
+                            <div class="prodcut__img-block">
+                                
+                            </div>
+                            <img src="./img/main/product-2.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="Перейти на страницу продукта Экстракорпоральная гемокоррекция" href="#">
+                            <span>03</span>
+                            <h3>Экстракорпоральная гемокоррекция </h3>
+                            <div class="prodcut__img-block">
+                                
+                            </div>
+                            <img src="./img/main/product-3.webp" alt="">
+                        </a>
+                    </li>  
+                </ul>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <div class="services__flex text-14-24">
+                    <h2>Услуги сервиса</h2>
+                    <p>Сервисная служба Novadial предоставляет широкий перечень услуг по техническому обслуживанию и ремонту диализного оборудования. Организация сервисной службы и портфолио сервисных продуктов выстроены таким образом, чтобы помогать медицинским учреждениям в решении стоящих перед ними задач</p>
+                    <button class="services__btn btn trans-btn">Подробнее</button>
+                </div>
+            </div>
+        </section>
+        <section class="contacts section-padding">
+            <div class="container">
+                <h2>Контакты</h2>
+                <div class="contacts__flex">
+                    <div class="contacts__block">
+                        <div class="contacts__flex-2">
+                            <div class="contacts__flex-3">
+                                <span>Телефон:</span>
+                                <a aria-label="Позвонить по номеру +74957287603" href="tel:+74957287603">+7 495 7287603</a>
+                            </div>
+                            <div class="contacts__flex-3">
+                                <span>E-mail:</span>
+                                <a href="mailto:info@novadial.ru">info@novadial.ru</a>
+                            </div>
+                            <div class="contacts__flex-3 contacts__flex-3_span">
+                                <span>Адрес:</span>
+                                <p>125171,&nbsp;г.&nbsp;Москва, Ленинградское&nbsp;шоссе,&nbsp;д.&nbsp;16А,&nbsp;стр.&nbsp;3</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contacts__acc acc">
+                                <span>По вопросам качества продукции</span>
+                                <svg class="contacts__icon" viewBox="0 0 19 19" width="19" height="19">
+                                    <use href="./img/svg.svg#acc-arrow"></use>
+                                </svg>
+                        </div>
+                        <div class="content">
+                             <div class="text-wrapper">
+                               <p>123</p>
+                            </div>
+                        </div>
+                        <div class="contacts__acc acc">
+                            <span>По вопросам нежелательных явленийв процессе или после применения продукции</span>
+                            <svg class="contacts__icon" viewBox="0 0 19 19" width="19" height="19">
+                                <use href="./img/svg.svg#acc-arrow"></use>
+                            </svg>
+                        </div>
+                        <div class="content">
+                            <div class="text-wrapper">
+                            <p>123</p>
+                            </div>
+                        </div>
+                        <div class="contacts__acc acc">
+                            <span>По вопросам ремонта и техническог ообслуживания медицинской техники и изделий</span>
+                            <svg class="contacts__icon" viewBox="0 0 19 19" width="19" height="19">
+                                <use href="./img/svg.svg#acc-arrow"></use>
+                            </svg>
+                        </div>
+                        <div class="content">
+                            <div class="text-wrapper">
+                            <p>123</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/grafskiy_pereulok_12as1/Z04YcANgQUMBQFtvfXRxcHhnYQ==/?ll=37.644668%2C55.800641&source=serp_navig&utm_medium=mapframe&utm_source=maps&z=16.34" style="color:#eee;font-size:12px;position:absolute;top:14px;">Графский переулок, 12Ас1 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.644668%2C55.800641&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Njc1Mzc1NBJG0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCT0YDQsNGE0YHQutC40Lkg0L_QtdGA0LXRg9C70L7QuiwgMTLQkNGBMSIKDT6QFkIVrzRfQg%2C%2C&source=serp_navig&z=16.34" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('blocks/footer/footer.html')
+    <script defer src="./js/script.min.js"></script>
+
+</body>
+
+</html>

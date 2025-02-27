@@ -1,0 +1,17 @@
+@keyframes rotate-border {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(-45deg); 
+    }
+}
+
+@keyframes rotate-back {
+    0% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
